@@ -1,0 +1,2 @@
+#!/bin/bash
+/opt/modbus2sql/bin/enrogenhmi.sh stop

@@ -1,0 +1,6 @@
+check process enrogenhmi with pidfile /opt/enrogenhmi/pid/enrogenhmi.pid
+   start program = "/opt/enrogenhmi/bin/start"
+   stop program = "/opt/enrogenhmi/bin/stop"
+        if cpu usage > 40% for 2 cycles then restart
+        if totalmem > 300.0 MB for 5 cycles then restart
+

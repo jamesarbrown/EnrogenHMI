@@ -1,0 +1,830 @@
+<?xml version="1.1" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.7">
+  <NonVisualComponents>
+    <Container class="javax.swing.JPanel" name="mainPanel">
+      <Properties>
+        <Property name="background" type="java.awt.Color" resourceKey="mainPanel.background"/>
+        <Property name="name" type="java.lang.String" value="mainPanel" noResource="true"/>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="1" attributes="0">
+                  <Component id="mainLayeredPane" pref="929" max="32767" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jLabel7" min="-2" max="-2" attributes="1"/>
+                      <Component id="buttonspanel" min="-2" max="-2" attributes="1"/>
+                  </Group>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="buttonspanel" max="32767" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+              <Component id="mainLayeredPane" alignment="0" pref="664" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Container class="javax.swing.JLayeredPane" name="mainLayeredPane">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="mainLayeredPane" noResource="true"/>
+          </Properties>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JLayeredPaneSupportLayout"/>
+          <SubComponents>
+            <Container class="javax.swing.JPanel" name="alarmPanel">
+              <Properties>
+                <Property name="name" type="java.lang.String" value="alarmPanel" noResource="true"/>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JLayeredPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JLayeredPaneSupportLayout$JLayeredPaneConstraintsDescription">
+                  <JLayeredPaneConstraints x="0" y="0" width="830" height="580" layer="0" position="-1"/>
+                </Constraint>
+              </Constraints>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="jScrollPane2" alignment="0" pref="806" max="32767" attributes="0"/>
+                              <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="btnAckAlarm" min="-2" pref="262" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="btnAckAllAlarm" min="-2" pref="262" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="btnresetAlarm" min="-2" pref="145" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="jScrollPane2" pref="496" max="32767" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                              <Component id="btnresetAlarm" max="32767" attributes="1"/>
+                              <Component id="btnAckAllAlarm" alignment="1" max="32767" attributes="1"/>
+                              <Component id="btnAckAlarm" alignment="1" pref="37" max="32767" attributes="1"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Container class="javax.swing.JScrollPane" name="jScrollPane2">
+                  <Properties>
+                    <Property name="name" type="java.lang.String" value="jScrollPane2" noResource="true"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                  </AuxValues>
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                  <SubComponents>
+                    <Component class="javax.swing.JTable" name="table_alarm">
+                      <Properties>
+                        <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+                          <Table columnCount="4" rowCount="4">
+                            <Column editable="true" title="Title 1" type="java.lang.Object"/>
+                            <Column editable="true" title="Title 2" type="java.lang.Object"/>
+                            <Column editable="true" title="Title 3" type="java.lang.Object"/>
+                            <Column editable="true" title="Title 4" type="java.lang.Object"/>
+                          </Table>
+                        </Property>
+                        <Property name="name" type="java.lang.String" value="table_alarm" noResource="true"/>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Component class="javax.swing.JLabel" name="jLabel1">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" resourceKey="jLabel1.text"/>
+                    <Property name="name" type="java.lang.String" value="jLabel1" noResource="true"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JButton" name="btnAckAlarm">
+                  <Properties>
+                    <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                      <action class="com.enrogen.hmi.EnrogenHMIView" id="acknowledgeSelectedAlarm" methodName="acknowledgeSelectedAlarm"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" resourceKey="btnAckAlarm.text"/>
+                    <Property name="name" type="java.lang.String" value="btnAckAlarm" noResource="true"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JButton" name="btnAckAllAlarm">
+                  <Properties>
+                    <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                      <action class="com.enrogen.hmi.EnrogenHMIView" id="acknowledgeAllAlarms" methodName="acknowledgeAllAlarms"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" resourceKey="btnAckAllAlarm.text"/>
+                    <Property name="name" type="java.lang.String" value="btnAckAllAlarm" noResource="true"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JButton" name="btnresetAlarm">
+                  <Properties>
+                    <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                      <action class="com.enrogen.hmi.EnrogenHMIView" id="resetAllAlarms" methodName="resetAllAlarms"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" resourceKey="btnresetAlarm.text"/>
+                    <Property name="name" type="java.lang.String" value="btnresetAlarm" noResource="true"/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JTabbedPane" name="tabPanelMain">
+              <Properties>
+                <Property name="background" type="java.awt.Color" resourceKey="tabPanelMain.background"/>
+                <Property name="name" type="java.lang.String" value="tabPanelMain" noResource="true"/>
+                <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[184, 70]"/>
+                </Property>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JLayeredPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JLayeredPaneSupportLayout$JLayeredPaneConstraintsDescription">
+                  <JLayeredPaneConstraints x="0" y="0" width="830" height="490" layer="0" position="-1"/>
+                </Constraint>
+              </Constraints>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
+              <SubComponents>
+                <Container class="javax.swing.JPanel" name="Messages">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" resourceKey="Messages.background"/>
+                    <Property name="name" type="java.lang.String" value="Messages" noResource="true"/>
+                    <Property name="opaque" type="boolean" value="false"/>
+                  </Properties>
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                      <JTabbedPaneConstraints tabName="Messages">
+                        <Property name="tabTitle" type="java.lang.String" resourceKey="Messages.TabConstraints.tabTitle"/>
+                      </JTabbedPaneConstraints>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jScrollPane1" alignment="0" pref="818" max="32767" attributes="0"/>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="jScrollPane1" pref="435" max="32767" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                  <SubComponents>
+                    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+                      <Properties>
+                        <Property name="background" type="java.awt.Color" resourceKey="jScrollPane1.background"/>
+                        <Property name="name" type="java.lang.String" value="jScrollPane1" noResource="true"/>
+                      </Properties>
+                      <AuxValues>
+                        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                      </AuxValues>
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                      <SubComponents>
+                        <Component class="javax.swing.JTextArea" name="text_messages">
+                          <Properties>
+                            <Property name="background" type="java.awt.Color" resourceKey="text_messages.background"/>
+                            <Property name="columns" type="int" value="20"/>
+                            <Property name="rows" type="int" value="5"/>
+                            <Property name="name" type="java.lang.String" value="text_messages" noResource="true"/>
+                            <Property name="opaque" type="boolean" value="false"/>
+                          </Properties>
+                        </Component>
+                      </SubComponents>
+                    </Container>
+                  </SubComponents>
+                </Container>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JPanel" name="faultPanel">
+              <Properties>
+                <Property name="name" type="java.lang.String" value="faultPanel" noResource="true"/>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JLayeredPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JLayeredPaneSupportLayout$JLayeredPaneConstraintsDescription">
+                  <JLayeredPaneConstraints x="0" y="0" width="830" height="490" layer="0" position="-1"/>
+                </Constraint>
+              </Constraints>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel3" alignment="0" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace pref="501" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace pref="444" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="javax.swing.JLabel" name="jLabel2">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" resourceKey="jLabel2.text"/>
+                    <Property name="name" type="java.lang.String" value="jLabel2" noResource="true"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel3">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" resourceKey="jLabel3.text"/>
+                    <Property name="name" type="java.lang.String" value="jLabel3" noResource="true"/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="buttonspanel">
+          <Properties>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[171, 32767]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[171, 100]"/>
+            </Property>
+            <Property name="name" type="java.lang.String" value="buttonspanel" noResource="true"/>
+            <Property name="opaque" type="boolean" value="false"/>
+          </Properties>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="btnalarms" alignment="0" max="32767" attributes="1"/>
+                          <Component id="btnoverview" alignment="0" max="32767" attributes="1"/>
+                          <Component id="btn_fullscreen" alignment="0" pref="136" max="32767" attributes="1"/>
+                          <Component id="btnlogin" alignment="0" min="-2" pref="151" max="-2" attributes="1"/>
+                          <Component id="alarmindicatorpanel" alignment="0" min="-2" pref="132" max="-2" attributes="1"/>
+                          <Component id="pinPanel" alignment="0" min="-2" max="-2" attributes="1"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="redlamp" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="greenlamp" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Component id="loginLevel" alignment="1" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <EmptySpace pref="24" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="btn_fullscreen" min="-2" pref="62" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                      <Component id="btnoverview" min="-2" pref="61" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="btnalarms" min="-2" pref="61" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="btnlogin" min="-2" pref="61" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                      <Component id="pinPanel" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="alarmindicatorpanel" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace pref="76" max="32767" attributes="0"/>
+                      <Component id="loginLevel" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="greenlamp" min="-2" max="-2" attributes="0"/>
+                          <Component id="redlamp" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JToggleButton" name="btn_fullscreen">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="com.enrogen.hmi.EnrogenHMIView" id="switchFullScreen" methodName="switchFullScreen"/>
+                </Property>
+                <Property name="text" type="java.lang.String" resourceKey="btn_fullscreen.text"/>
+                <Property name="name" type="java.lang.String" value="btn_fullscreen" noResource="true"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="btnoverview">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="com.enrogen.hmi.EnrogenHMIView" id="btnOverviewClick" methodName="btnOverviewClick"/>
+                </Property>
+                <Property name="text" type="java.lang.String" resourceKey="btnoverview.text"/>
+                <Property name="name" type="java.lang.String" value="btnoverview" noResource="true"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="redlamp">
+              <Properties>
+                <Property name="icon" type="javax.swing.Icon" resourceKey="redlamp.icon"/>
+                <Property name="text" type="java.lang.String" resourceKey="redlamp.text"/>
+                <Property name="disabledIcon" type="javax.swing.Icon" resourceKey="redlamp.disabledIcon"/>
+                <Property name="name" type="java.lang.String" value="redlamp" noResource="true"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="greenlamp">
+              <Properties>
+                <Property name="icon" type="javax.swing.Icon" resourceKey="greenlamp.icon"/>
+                <Property name="text" type="java.lang.String" resourceKey="greenlamp.text"/>
+                <Property name="disabledIcon" type="javax.swing.Icon" resourceKey="greenlamp.disabledIcon"/>
+                <Property name="name" type="java.lang.String" value="greenlamp" noResource="true"/>
+              </Properties>
+            </Component>
+            <Container class="javax.swing.JPanel" name="pinPanel">
+              <Properties>
+                <Property name="name" type="java.lang.String" value="pinPanel" noResource="true"/>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Component id="js1" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
+                                  <Component id="js2" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="js3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Component id="btnEnterPin" alignment="0" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace pref="16" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="js3" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="js2" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="js1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="btnEnterPin" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="javax.swing.JSpinner" name="js1">
+                  <Properties>
+                    <Property name="name" type="java.lang.String" value="js1" noResource="true"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JSpinner" name="js2">
+                  <Properties>
+                    <Property name="name" type="java.lang.String" value="js2" noResource="true"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JSpinner" name="js3">
+                  <Properties>
+                    <Property name="name" type="java.lang.String" value="js3" noResource="true"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JButton" name="btnEnterPin">
+                  <Properties>
+                    <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                      <action class="com.enrogen.hmi.EnrogenHMIView" id="btnEnterPin" methodName="btnEnterPin"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" resourceKey="btnEnterPin.text"/>
+                    <Property name="name" type="java.lang.String" value="btnEnterPin" noResource="true"/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JPanel" name="alarmindicatorpanel">
+              <Properties>
+                <Property name="name" type="java.lang.String" value="alarmindicatorpanel" noResource="true"/>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+                <Property name="useNullLayout" type="boolean" value="false"/>
+              </Layout>
+              <SubComponents>
+                <Component class="javax.swing.JLabel" name="jLabel4">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" resourceKey="jLabel4.text"/>
+                    <Property name="name" type="java.lang.String" value="jLabel4" noResource="true"/>
+                  </Properties>
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                      <AbsoluteConstraints x="10" y="40" width="-1" height="-1"/>
+                    </Constraint>
+                  </Constraints>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel5">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" resourceKey="jLabel5.text"/>
+                    <Property name="name" type="java.lang.String" value="jLabel5" noResource="true"/>
+                  </Properties>
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                      <AbsoluteConstraints x="40" y="60" width="-1" height="-1"/>
+                    </Constraint>
+                  </Constraints>
+                </Component>
+                <Component class="javax.swing.JLabel" name="alarmicon">
+                  <Properties>
+                    <Property name="icon" type="javax.swing.Icon" resourceKey="alarmicon.icon"/>
+                    <Property name="text" type="java.lang.String" resourceKey="alarmicon.text"/>
+                    <Property name="name" type="java.lang.String" value="alarmicon" noResource="true"/>
+                  </Properties>
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                      <AbsoluteConstraints x="50" y="10" width="-1" height="-1"/>
+                    </Constraint>
+                  </Constraints>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Component class="javax.swing.JLabel" name="loginLevel">
+              <Properties>
+                <Property name="text" type="java.lang.String" resourceKey="loginLevel.text"/>
+                <Property name="name" type="java.lang.String" value="loginLevel" noResource="true"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel6">
+              <Properties>
+                <Property name="text" type="java.lang.String" resourceKey="jLabel6.text"/>
+                <Property name="name" type="java.lang.String" value="jLabel6" noResource="true"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JToggleButton" name="btnlogin">
+              <Properties>
+                <Property name="text" type="java.lang.String" resourceKey="btnlogin.text"/>
+                <Property name="name" type="java.lang.String" value="btnlogin" noResource="true"/>
+              </Properties>
+              <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnloginMouseClicked"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="btnalarms">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="com.enrogen.hmi.EnrogenHMIView" id="btnAlarmClick" methodName="btnAlarmClick"/>
+                </Property>
+                <Property name="text" type="java.lang.String" resourceKey="btnalarms.text"/>
+                <Property name="name" type="java.lang.String" value="btnalarms" noResource="true"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Component class="javax.swing.JLabel" name="jLabel7">
+          <Properties>
+            <Property name="icon" type="javax.swing.Icon" resourceKey="jLabel7.icon"/>
+            <Property name="text" type="java.lang.String" resourceKey="jLabel7.text"/>
+            <Property name="name" type="java.lang.String" value="jLabel7" noResource="true"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JMenuBar" name="menuBar">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="menuBar" noResource="true"/>
+      </Properties>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+        <Property name="useNullLayout" type="boolean" value="true"/>
+      </Layout>
+      <SubComponents>
+        <Menu class="javax.swing.JMenu" name="fileMenu">
+          <Properties>
+            <Property name="text" type="java.lang.String" resourceKey="fileMenu.text"/>
+            <Property name="name" type="java.lang.String" value="fileMenu" noResource="true"/>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="true"/>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="0"/>
+          </AuxValues>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem1">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="com.enrogen.hmi.EnrogenHMIView" id="showPreferencesBox" methodName="showPreferencesBox"/>
+                </Property>
+                <Property name="text" type="java.lang.String" resourceKey="jMenuItem1.text"/>
+                <Property name="name" type="java.lang.String" value="jMenuItem1" noResource="true"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem2">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="com.enrogen.hmi.EnrogenHMIView" id="save" methodName="save"/>
+                </Property>
+                <Property name="text" type="java.lang.String" resourceKey="jMenuItem2.text"/>
+                <Property name="name" type="java.lang.String" value="jMenuItem2" noResource="true"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="exitMenuItem">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="org.jdesktop.application.Application" id="quit" methodName="quit"/>
+                </Property>
+                <Property name="name" type="java.lang.String" value="exitMenuItem" noResource="true"/>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="true"/>
+                <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="0"/>
+              </AuxValues>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="menu_design">
+          <Properties>
+            <Property name="text" type="java.lang.String" resourceKey="menu_design.text"/>
+            <Property name="name" type="java.lang.String" value="menu_design" noResource="true"/>
+          </Properties>
+          <SubComponents>
+            <MenuItem class="javax.swing.JCheckBoxMenuItem" name="checkDesignMode">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="com.enrogen.hmi.EnrogenHMIView" id="switchDesignMode" methodName="switchDesignMode"/>
+                </Property>
+                <Property name="text" type="java.lang.String" resourceKey="checkDesignMode.text"/>
+                <Property name="name" type="java.lang.String" value="checkDesignMode" noResource="true"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JCheckBoxMenuItem" name="checkShowGrid">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="com.enrogen.hmi.EnrogenHMIView" id="paintDisplayPanel" methodName="paintDisplayPanel"/>
+                </Property>
+                <Property name="selected" type="boolean" value="true"/>
+                <Property name="text" type="java.lang.String" resourceKey="checkShowGrid.text"/>
+                <Property name="name" type="java.lang.String" value="checkShowGrid" noResource="true"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JCheckBoxMenuItem" name="checkSnaptoGrid">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="com.enrogen.hmi.EnrogenHMIView" id="paintDisplayPanel" methodName="paintDisplayPanel"/>
+                </Property>
+                <Property name="selected" type="boolean" value="true"/>
+                <Property name="text" type="java.lang.String" resourceKey="checkSnaptoGrid.text"/>
+                <Property name="name" type="java.lang.String" value="checkSnaptoGrid" noResource="true"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JPopupMenu$Separator" name="jSeparator1">
+              <Properties>
+                <Property name="name" type="java.lang.String" value="jSeparator1" noResource="true"/>
+              </Properties>
+            </MenuItem>
+            <Menu class="javax.swing.JMenu" name="menu_tab">
+              <Properties>
+                <Property name="text" type="java.lang.String" resourceKey="menu_tab.text"/>
+                <Property name="name" type="java.lang.String" value="menu_tab" noResource="true"/>
+              </Properties>
+              <SubComponents>
+                <MenuItem class="javax.swing.JMenuItem" name="jMenuItem3">
+                  <Properties>
+                    <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                      <action class="com.enrogen.hmi.EnrogenHMIView" id="addDisplayPane" methodName="addDisplayPane"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" resourceKey="jMenuItem3.text"/>
+                    <Property name="name" type="java.lang.String" value="jMenuItem3" noResource="true"/>
+                  </Properties>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="jMenuItem6">
+                  <Properties>
+                    <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                      <action class="com.enrogen.hmi.EnrogenHMIView" id="deleteTab" methodName="deleteTab"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" resourceKey="jMenuItem6.text"/>
+                    <Property name="name" type="java.lang.String" value="jMenuItem6" noResource="true"/>
+                  </Properties>
+                </MenuItem>
+                <MenuItem class="javax.swing.JPopupMenu$Separator" name="jSeparator2">
+                  <Properties>
+                    <Property name="name" type="java.lang.String" value="jSeparator2" noResource="true"/>
+                  </Properties>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="jMenuItem4">
+                  <Properties>
+                    <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                      <action class="com.enrogen.hmi.EnrogenHMIView" id="moveTabLeft" methodName="moveTabLeft"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" resourceKey="jMenuItem4.text"/>
+                    <Property name="name" type="java.lang.String" value="jMenuItem4" noResource="true"/>
+                  </Properties>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="jMenuItem5">
+                  <Properties>
+                    <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                      <action class="com.enrogen.hmi.EnrogenHMIView" id="moveTabRight" methodName="moveTabRight"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" resourceKey="jMenuItem5.text"/>
+                    <Property name="name" type="java.lang.String" value="jMenuItem5" noResource="true"/>
+                  </Properties>
+                </MenuItem>
+              </SubComponents>
+            </Menu>
+            <Menu class="javax.swing.JMenu" name="menu_sld_component">
+              <Properties>
+                <Property name="text" type="java.lang.String" resourceKey="menu_sld_component.text"/>
+                <Property name="name" type="java.lang.String" value="menu_sld_component" noResource="true"/>
+              </Properties>
+              <SubComponents>
+                <MenuItem class="javax.swing.JMenuItem" name="menu_add_breaker">
+                  <Properties>
+                    <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                      <action class="com.enrogen.hmi.EnrogenHMIView" id="menu_add_breaker" methodName="menu_add_breaker"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" resourceKey="menu_add_breaker.text"/>
+                    <Property name="name" type="java.lang.String" value="menu_add_breaker" noResource="true"/>
+                  </Properties>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="menu_add_busbar">
+                  <Properties>
+                    <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                      <action class="com.enrogen.hmi.EnrogenHMIView" id="menu_add_busbar" methodName="menu_add_busbar"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" resourceKey="menu_add_busbar.text"/>
+                    <Property name="name" type="java.lang.String" value="menu_add_busbar" noResource="true"/>
+                  </Properties>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="jMenuItem7">
+                  <Properties>
+                    <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                      <action class="com.enrogen.hmi.EnrogenHMIView" id="menu_add_generator" methodName="menu_add_generator"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" resourceKey="jMenuItem7.text"/>
+                    <Property name="name" type="java.lang.String" value="jMenuItem7" noResource="true"/>
+                  </Properties>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="jMenuItem8">
+                  <Properties>
+                    <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                      <action class="com.enrogen.hmi.EnrogenHMIView" id="menu_add_transformer" methodName="menu_add_transformer"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" resourceKey="jMenuItem8.text"/>
+                    <Property name="name" type="java.lang.String" value="jMenuItem8" noResource="true"/>
+                  </Properties>
+                </MenuItem>
+              </SubComponents>
+            </Menu>
+            <Menu class="javax.swing.JMenu" name="menu_instrument">
+              <Properties>
+                <Property name="text" type="java.lang.String" resourceKey="menu_instrument.text"/>
+                <Property name="name" type="java.lang.String" value="menu_instrument" noResource="true"/>
+              </Properties>
+              <SubComponents>
+                <MenuItem class="javax.swing.JMenuItem" name="jMenuItem9">
+                  <Properties>
+                    <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                      <action class="com.enrogen.hmi.EnrogenHMIView" id="menu_add_analoguemeter" methodName="menu_add_analoguemeter"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" resourceKey="jMenuItem9.text"/>
+                    <Property name="name" type="java.lang.String" value="jMenuItem9" noResource="true"/>
+                  </Properties>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="jMenuItem10">
+                  <Properties>
+                    <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                      <action class="com.enrogen.hmi.EnrogenHMIView" id="menu_add_digitalmeter" methodName="menu_add_digitalmeter"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" resourceKey="jMenuItem10.text"/>
+                    <Property name="actionCommand" type="java.lang.String" resourceKey="jMenuItem10.actionCommand"/>
+                    <Property name="name" type="java.lang.String" value="jMenuItem10" noResource="true"/>
+                  </Properties>
+                </MenuItem>
+              </SubComponents>
+            </Menu>
+            <Menu class="javax.swing.JMenu" name="menu_other">
+              <Properties>
+                <Property name="text" type="java.lang.String" resourceKey="menu_other.text"/>
+                <Property name="name" type="java.lang.String" value="menu_other" noResource="true"/>
+              </Properties>
+              <SubComponents>
+                <MenuItem class="javax.swing.JMenuItem" name="menu_add_text">
+                  <Properties>
+                    <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                      <action class="com.enrogen.hmi.EnrogenHMIView" id="menu_add_label" methodName="menu_add_label"/>
+                    </Property>
+                    <Property name="label" type="java.lang.String" resourceKey="menu_add_text.label"/>
+                    <Property name="name" type="java.lang.String" value="menu_add_text" noResource="true"/>
+                  </Properties>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="jMenuItem11">
+                  <Properties>
+                    <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                      <action class="com.enrogen.hmi.EnrogenHMIView" id="menu_add_transmittablevalue" methodName="menu_add_transmittablevalue"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" resourceKey="jMenuItem11.text"/>
+                    <Property name="name" type="java.lang.String" value="jMenuItem11" noResource="true"/>
+                  </Properties>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="jMenuItem12">
+                  <Properties>
+                    <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                      <action class="com.enrogen.hmi.EnrogenHMIView" id="menu_add_transmitbutton" methodName="menu_add_transmitbutton"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" resourceKey="jMenuItem12.text"/>
+                    <Property name="name" type="java.lang.String" value="jMenuItem12" noResource="true"/>
+                  </Properties>
+                </MenuItem>
+              </SubComponents>
+            </Menu>
+          </SubComponents>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="helpMenu">
+          <Properties>
+            <Property name="text" type="java.lang.String" resourceKey="helpMenu.text"/>
+            <Property name="name" type="java.lang.String" value="helpMenu" noResource="true"/>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="true"/>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="0"/>
+          </AuxValues>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="aboutMenuItem">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="com.enrogen.hmi.EnrogenHMIView" id="showAboutBox" methodName="showAboutBox"/>
+                </Property>
+                <Property name="name" type="java.lang.String" value="aboutMenuItem" noResource="true"/>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="true"/>
+                <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="0"/>
+              </AuxValues>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+      </SubComponents>
+    </Container>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="component" type="javax.swing.JComponent" editor="org.netbeans.modules.form.ComponentChooserEditor">
+      <ComponentRef name="mainPanel"/>
+    </Property>
+    <Property name="menuBar" type="javax.swing.JMenuBar" editor="org.netbeans.modules.form.ComponentChooserEditor">
+      <ComponentRef name="menuBar"/>
+    </Property>
+  </Properties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="2"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+    <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,2,-79,0,0,4,92"/>
+  </AuxValues>
+</Form>
